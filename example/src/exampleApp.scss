@@ -1,0 +1,40 @@
+// html {
+//   height: 100%;
+//   overflow: hidden;
+// }
+body {
+  // height: 100vh;
+  // overflow: auto;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.page-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-container {
+  width: 200px;
+  height: 300px;
+  border: 1px solid  lightblue;
+  overflow-y: auto;
+
+  > div:last-child {
+    border: 0;
+  }
+
+  .item {
+    padding: 10px 15px;
+    border-bottom: 1px solid lightgray;
+  }
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}

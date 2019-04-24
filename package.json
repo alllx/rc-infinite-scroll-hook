@@ -1,0 +1,81 @@
+{
+  "name": "rc-infinite-scroll-hook",
+  "version": "1.0.0",
+  "description": "react infinite scroll hook",
+  "scripts": {
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "test:watch": "jest --watchAll",
+    "lint": "tslint -p .",
+    "tsc": "tsc -d",
+    "start": "rm -rf example/dist && parcel ./example/src/example.html -d ./example/dist",
+    "prebuild": "rm -rf dist",
+    "build:example": "rm -rf example/dist && parcel build ./example/src/example.html -d ./example/dist",
+    "deploy": "gh-pages -d examples/dist",
+    "publish-demo": "npm run build:example && npm run deploy",
+    "release": "npm run lint && npm run test && npm run tsc"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "infinite",
+    "scroll"
+  ],
+  "author": "Alexander Yamkov",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.9.1",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.11",
+    "@types/react": "^16.8.14",
+    "@types/react-dom": "^16.8.4",
+    "coveralls": "^3.0.3",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "gh-pages": "^2.0.1",
+    "jest": "^24.7.1",
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sass": "^1.19.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^4.0.0",
+    "tslint-react-hooks": "^2.1.0",
+    "typescript": "^3.4.4",
+    "typescript-tslint-plugin": "^0.3.1"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.123",
+    "lodash": "^4.17.11"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      ".scss$": "../test/SassStub.ts"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ],
+    "collectCoverage": true,
+    "coverageDirectory": "dist/coverage",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "text-summary"
+    ]
+  }
+}
