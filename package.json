@@ -7,10 +7,10 @@
     "test:watch": "jest --watchAll",
     "lint": "tslint -p .",
     "tsc": "tsc -d",
-    "start": "rm -rf example/dist && parcel ./example/src/example.html -d ./example/dist",
+    "start": "rm -rf example/dist && parcel ./example/src/index.html -d ./example/dist",
     "prebuild": "rm -rf dist",
-    "build:example": "rm -rf example/dist && parcel build ./example/src/example.html -d ./example/dist",
-    "deploy": "gh-pages -d examples/dist",
+    "build:example": "rm -rf example/dist && parcel build ./example/src/index.html -d ./example/dist",
+    "deploy": "gh-pages -d example/dist",
     "publish-demo": "npm run build:example && npm run deploy",
     "release": "npm run lint && npm run test && npm run tsc"
   },
