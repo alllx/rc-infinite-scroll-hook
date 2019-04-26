@@ -1,5 +1,6 @@
 import { MutableRefObject, useState, useEffect, useCallback, Dispatch, SetStateAction } from 'react';
-import throttle from 'lodash/fp/throttle';
+
+import throttle from './throttle';
 
 const useInfiniteScroll = (
   containerRef: MutableRefObject<HTMLElement | null>,
@@ -26,7 +27,7 @@ const useInfiniteScroll = (
   }, [isFetching]);
 
   const throttleOnScroll = useCallback(
-    throttle(300, () => {
+    throttle(() => {
       const el = containerRef.current;
 
       if (!isFetching && el && el.scrollTop + el.clientHeight + triggerFetchPos >= el.scrollHeight) {

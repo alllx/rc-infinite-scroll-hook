@@ -1,6 +1,8 @@
 src
-examples
+example
 test
-tsconfig.js
-tslint.js
+tsconfig.json
+tslint.json
+.prettierrc.json
+.travis.yml
 .gitignore

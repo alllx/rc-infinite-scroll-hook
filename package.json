@@ -2,6 +2,7 @@
   "name": "rc-infinite-scroll-hook",
   "version": "1.0.0",
   "description": "react infinite scroll hook",
+  "main": "dist/useInfiniteScroll.js",
   "scripts": {
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test:watch": "jest --watchAll",
@@ -22,6 +23,11 @@
   ],
   "author": "Alexander Yamkov",
   "license": "MIT",
+  "homepage": "https://github.com/alllx/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alllx/rc-infinite-scroll-hook.git"
+  },
   "peerDependencies": {
     "react": "^16.8.6"
   },
@@ -49,17 +55,11 @@
     "typescript": "^3.4.4",
     "typescript-tslint-plugin": "^0.3.1"
   },
-  "dependencies": {
-    "@types/lodash": "^4.14.123",
-    "lodash": "^4.17.11"
-  },
+  "dependencies": {},
   "jest": {
     "verbose": true,
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
-    },
-    "moduleNameMapper": {
-      ".scss$": "../test/SassStub.ts"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
     "moduleFileExtensions": [

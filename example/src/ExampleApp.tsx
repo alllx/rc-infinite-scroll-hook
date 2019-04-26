@@ -6,15 +6,12 @@ import useInfiniteScroll from '../../src/useInfiniteScroll';
 import './exampleApp.scss';
 import LoadingSpinner from './LoadingSpinner';
 
-interface Props {}
-
-const App: FC<Props> = (props) => {
+const App: FC = () => {
   const [items, setItems] = useState<string[]>([]);
   const containerRef = useRef<null | HTMLDivElement>(null);
 
   useEffect(() => {
     setItems(createItems());
-    // containerRef.current = window.document.body;
   }, []);
 
   const [isLoadingMore] = useInfiniteScroll(containerRef, getItems);
