@@ -2,6 +2,8 @@
 ![Version](https://img.shields.io/npm/v/rc-infinite-scroll-hook.svg?style=flat-square)
 ![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/rc-infinite-scroll-hook.svg?style=flat-square)
 ![npm type definitions](https://img.shields.io/npm/types/rc-infinite-scroll-hook.svg?style=flat-square)
+[![Build Status](http://img.shields.io/travis/alllx/rc-infinite-scroll-hook.svg?style=flat-square)](https://travis-ci.com/alllx/rc-infinite-scroll-hook)
+[![Coverage Status](https://img.shields.io/coveralls/alllx/rc-infinite-scroll-hook.svg?style=flat-square)](https://coveralls.io/github/alllx/rc-infinite-scroll-hook?branch=master)
 
 # rc-infinite-scroll-hook
 

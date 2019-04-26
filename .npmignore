@@ -5,4 +5,5 @@ tsconfig.json
 tslint.json
 .prettierrc.json
 .travis.yml
+.coveralls.yml
 .gitignore
