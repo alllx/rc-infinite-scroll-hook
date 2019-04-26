@@ -5,6 +5,8 @@
 [![Build Status](http://img.shields.io/travis/alllx/rc-infinite-scroll-hook.svg?style=flat-square)](https://travis-ci.com/alllx/rc-infinite-scroll-hook)
 [![Coverage Status](https://img.shields.io/coveralls/alllx/rc-infinite-scroll-hook.svg?style=flat-square)](https://coveralls.io/github/alllx/rc-infinite-scroll-hook?branch=master)
 
+<!-- ![Version](https://img.shields.io/npm/dt/react-flexible-progressbar.svg?style=flat-square) -->
+
 # rc-infinite-scroll-hook
 
 Infinite scroll react hook.

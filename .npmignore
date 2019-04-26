@@ -1,3 +1,5 @@
+.cache
+dist/coverage
 src
 example
 test
